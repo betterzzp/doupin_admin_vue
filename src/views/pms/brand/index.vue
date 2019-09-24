@@ -185,6 +185,7 @@
         this.$router.push({path: '/pms/updateBrand', query: {id: row.id}})
       },
       handleDelete(index, row) {
+        debugger
         this.$confirm('是否要删除该品牌', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',

@@ -58,6 +58,20 @@ export const constantRouterMap = [
         hidden: true
       },
       {
+        path: 'banner',
+        name: 'banner',
+        component: () => import('@/views/pms/banner/index'),
+        meta: {title: 'Banner', icon: 'product-cate'},
+        hidden: false
+      },
+      {
+        path: 'goods',
+        name: 'goods',
+        component: () => import('@/views/pms/goods/index'),
+        meta: {title: '商品', icon: 'product-cate'},
+        hidden: false
+      },
+      {
         path: 'productRecycle',
         name: 'productRecycle',
         component: () => import('@/views/pms/product/index'),
